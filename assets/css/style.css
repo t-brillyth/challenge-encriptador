@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --color-background: #393939;
+    --color-primary: #7409A6;
+    --color-secondary: #EAE6ED;
+    --color-bg-text: #ffffffa7;
+    --color-shadow: #00000008;
+    --white: #FFFFFF;
+    --gray: #495057;
+
+
+    /* Tipografía */
+    --tipo-principal: Helvetica, Arial, sans-serif;
+    --tipo-secundaria: Verdana;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Inter", sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-secondary);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+header {
+    width: 85%;
+    padding: 2.5em 1rem;
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main {
+    width: 85%;
+    margin: 0 auto;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+}
+
+
+.left,
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.left {
+    width: 70%;
+    align-items: left;
+}
+
+.right {
+    width: 30%;
+    align-items: center;
+}
+
+h1 {
+    color: var(--color-primary);
+    margin-bottom: 3rem;
+}
+
+form {
+    width: 80%;
+}
+
+#texto {
+    width: 100%;
+    background: #ffffffa7;
+    color: var(--color-primary);
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 1.25rem;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+}
+
+textarea:focus {
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(139, 109, 179, 0.25);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(139, 109, 179, 0.25);
+    box-shadow: 0px 0px 15px 0px rgba(139, 109, 179, 0.25);
+}
+
+::placeholder {
+    color: var(--color-primary);
+    font-size: 1.25rem;
+}
+
+.bottom-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.bottom-form span {
+    color: var(--gray);
+    font-size: .8rem;
+    margin-left: .35rem;
+}
+
+button {
+    height: 40px;
+    width: 49%;
+    border-radius: 10px;
+    margin-top: .5rem;
+    font-size: 1rem;
+}
+
+.btn-dark {
+    background: var(--color-primary);
+    color: var(--white);
+}
+
+.btn-light {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+.container-result {
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 10%;
+}
+
+.container-result img {
+    width: 100%;
+}
+
+.container-result h3,
+.container-result p {
+    text-align: center;
+}
+
+.container-result h3 {
+    margin-bottom: 1rem;
+}
+
+#container-result-new {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0px 0px 15px 0px rgba(112, 102, 224, .5);
+    padding: 3rem;
+    border-radius: 20px;
+    background: white;
+}
+
+
+footer {
+    background-color: var(--color-primary);
+    text-align: center;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media only screen and (min-width: 1200px) {
+    header, main{
+        max-width: 1000px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    header,
+    main {
+        width: 90%;
+    }
+
+    .container-result h3 {
+        font-size: 1rem;
+        margin-bottom: .5rem;
+    }
+
+    .container-result p {
+        font-size: .85rem;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    header,
+    main {
+        flex-direction: column;
+        gap: 3em;
+    }
+    .nav {
+        text-align: center;
+    }
+    .nav img {
+        height: 30px;
+    }
+    h1 {
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .container-result {
+        width: 60%;
+    }
+    .container-result img {
+        display: none;
+    }
+
+    #texto {
+        width: 90%;
+        height: 120px;
+    }
+    button{
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+        padding: 1em;
+        font-size: .75rem;
+    }
+}

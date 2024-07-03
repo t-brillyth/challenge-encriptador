@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="shortcut icon" href="/assets/images/favicon.ico">
+</head>
+<body class="flex-container">
+    <header>
+        <div class="nav">
+            <img src="./assets/images/logo.svg" alt="Logo Alura">
+        </div>
+    </header>
+    <main>
+        <div class="left">
+            <h1 class="title_site">Changenges - Encriptado</h1>
+            <form class="formulario">
+                <textarea name="" id="texto" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                <div>
+                    <p class="bottom-form">
+                        <img src="./assets/images/icon_advertencia.svg" alt="icono advertencia">
+                        <span class="texto-aviso">Solo letras minusculas y sin acentos</span>
+                    </p>
+                    <button class="btn-dark" id="btn-encriptar">Encriptar</button>
+                    <button class="btn-light" id="btn-desencriptar">Desencriptar</button>
+                </div>
+            </form>
+        </div>
+        <div class="right">
+            <div class="container-result">
+                <img src="./assets/images/personaje.png" alt="Personaje en espera">
+                <h3>Ningun mensaje fue encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div id="container-result-new">
+                <textarea id="mensaje-texto" type="text" placeholder="Resultado" readonly></textarea>
+                <button id="btn-copy">Copy</button>
+            </div>
+        </div>
+        <div class="error"></div>
+    </main>
+    <footer>challenges - Tania Forero</footer>
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
