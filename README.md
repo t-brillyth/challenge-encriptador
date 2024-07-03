@@ -46,7 +46,7 @@ Por ejemplo:
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/encriptador-texto.git](https://github.com/t-brillyth/challenge-encriptador.git)
+   git clone https://github.com/t-brillyth/challenge-encriptador.git
    
 2. Navega al directorio del proyecto
 
